@@ -210,13 +210,13 @@
 // | BASE  | BASE | BASE | BASE | BASE | BASE |                   | BASE | BASE  | BASE  | BASE | BASE  | BASE |
 // | BASE  | BASE | BASE | BASE | BASE | BASE |                   | SCRL←| SCRL↓ | SCRL↑ | SCRL→| BASE  | BASE |
 // | BASE  | RGUI | ALT  | CTRL | SHIFT| BASE |                   | MOV← | MOV↓  | MOV↑  | MOV→ | BASE  | BASE |
-// | BASE  | BASE | BASE | BASE | BASE | BASE |        |  |       | BASE | PGDN  | PGUP  | BASE | BASE  | BASE |
+// | BASE  | BASE | BASE | BASE | BACK | FWD  |        |  |       | BASE | PGDN  | PGUP  | BASE | BASE  | BASE |
 //                | BASE | BASE | RCLK | LCLK |        |  | LCLK  | MCLK | RCLK  | BASE  | MOUSE|
             bindings = <
 _0_  _0_        _0_        _0_         _0_         _0_                          _0_     _0_       _0_       _0_     _0_   _0_
 _0_  _0_        _0_        _0_         _0_         _0_                          _MS_L   _MS_D     _MS_U     _MS_R   _0_   _0_
 _0_  &kp RGUI   &kp LALT   &kp LCTRL   &kp LSHFT   _0_                          _MM_L   _MM_D     _MM_U     _MM_R   _0_   _0_
-_0_  _0_        _0_        _0_         _0_         _0_     _0_   _0_             _0_     &kp PG_DN &kp PG_UP _0_     _0_   _0_
+_0_  _0_        _0_        _0_         &kp C_AC_BACK &kp C_AC_FORWARD _0_ _0_      _0_     &kp PG_DN &kp PG_UP _0_     _0_   _0_
                 _0_        _0_         &mkp RCLK   &mkp LCLK  _0_  &mkp LCLK    &mkp MCLK &mkp RCLK _0_     &tog MOUSE
             >;
 
